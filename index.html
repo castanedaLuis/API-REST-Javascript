@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>My Favorite Cats 😸</title>
+</head>
+<body>
+
+    <header class="header">
+        <p class="title">Gets, creates, and deletes</p>
+        <p class="description">
+            In this project you can add to favorites,delete the favorites, upload an image of cats, 
+            and view raised images of cats
+        </p>
+    </header>
+
+    <div class="containerButton">
+        <button>
+            <a href="https://github.com/castanedaLuis" target="_blank">on my GitHub</a>
+        </button>
+    </div>
+
+    <main class="main">
+        <h1 class="mainTitle">Beautiful Michis</h1>
+        <div class="container">
+            <div class="randomMichis">
+                <h2 class="titleSeccion">Random Cats</h2>
+                <div class="bodyRandom" id="bodyRandom">
+                        <!-- HERE IMG RANDOM -->
+                </div>
+                <button class="bottonReload" onclick="reloadImages()">
+                    <span>Reload</span> 
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M8.35 40v-3h6.5l-.75-.6q-3.2-2.55-4.65-5.55-1.45-3-1.45-6.7 0-5.3 3.125-9.525Q14.25 10.4 19.35 8.8v3.1q-3.75 1.45-6.05 4.825T11 24.15q0 3.15 1.175 5.475 1.175 2.325 3.175 4.025l1.5 1.05v-6.2h3V40Zm20.35-.75V36.1q3.8-1.45 6.05-4.825T37 23.85q0-2.4-1.175-4.875T32.75 14.6l-1.45-1.3v6.2h-3V8h11.5v3h-6.55l.75.7q3 2.8 4.5 6t1.5 6.15q0 5.3-3.1 9.55-3.1 4.25-8.2 5.85Z"/></svg>
+                </button>
+            </div>
+            <div class="favoriteAndCarga">
+                <div class="favorite">
+                    <h2 class="titleSeccion">Yours Favorites </h2>
+
+                    <div class="body" id="bodyFavorites">
+                        <!-- Here my michis favorites -->
+                    </div>
+
+                </div>
+                <div class="carga" id="carga">
+
+                    <h2 class="titleSeccion">Upload a picture of cats </h2>
+                    <form id="uploadingCat" >
+                        <input class="file" id="file" type="file" name="file"/>
+                        <img src="" id="imagenPrevisualizacion"/>
+                        <button class="bottonFile" type="button" onclick="uploadImageMichiWithFormData()">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M12.5 40q-4.3 0-7.4-3.1Q2 33.8 2 29.5q0-3.9 2.475-6.875t6.375-3.575q1-4.85 4.7-7.925T24.1 8.05q5.65 0 9.475 4.075Q37.4 16.2 37.4 21.9v1.2q3.6-.1 6.1 2.325Q46 27.85 46 31.55q0 3.45-2.5 5.95T37.55 40H25.5q-1.2 0-2.1-.9-.9-.9-.9-2.1V24.1l-4.15 4.15-2.15-2.15 7.8-7.8 7.8 7.8-2.15 2.15-4.15-4.15V37h12.05q2.25 0 3.85-1.6t1.6-3.85q0-2.25-1.6-3.85t-3.85-1.6H34.4v-4.2q0-4.45-3.025-7.65t-7.475-3.2q-4.45 0-7.5 3.2t-3.05 7.65h-.95q-3.1 0-5.25 2.175T5 29.45q0 3.1 2.2 5.325T12.5 37h7v3ZM24 25.5Z"/></svg>
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="./main.js"></script>
+</body>
+</html>

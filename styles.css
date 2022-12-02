@@ -1,0 +1,207 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 80px;
+    background: rgb(58,170,180);
+    background: linear-gradient(90deg, rgba(58,170,180,1) 0%, rgba(253,136,29,1) 50%, rgba(69,99,252,1) 100%);
+    text-align: center;
+}
+.header .title{
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+.header .description{
+    padding: 0;
+    margin-top: 0;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.containerButton button a{
+    text-decoration: none;
+    color:#001E50;
+}
+.containerButton button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px !important;
+    border-radius: 20px;
+    width: 210px;
+    height: 44px;
+    margin: auto;
+    margin-bottom: 15px;
+    background-color: transparent;
+}
+.containerButton button:hover{
+    transition: all .5s ease;
+    background-color: #001E50;
+    color: white;
+}
+.containerButton button:hover a{
+    transition: all .5s ease;
+    color: white;
+}
+
+
+.main{
+    /* background-color: rgb(33, 22, 131);
+    color: white; */
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
+.main .mainTitle{
+    font-size: 26px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.randomMichis{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.randomMichis .bodyRandom{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.favoriteAndCarga{
+    display: flex;
+    justify-content: space-between;
+}
+.favoriteAndCarga .favorite{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 70%;
+}
+.favorite .body{
+    margin: 20px;
+    display: flex;
+    flex-flow: wrap;
+    gap: 20px;
+}
+.carga{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 15px;
+    text-align: center;
+}
+.carga #uploadingCat .file{
+    width: 100%;
+    /* max-width: 200px;
+    height: 200px; */
+    /* background-color: rgb(186, 186, 186); */
+}
+.carga #uploadingCat .bottonFile{
+    width: 100px;
+    height: 40px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #001E50;
+    color: white;
+    border: #001E50 1px solid;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carga #uploadingCat .bottonFile:hover{
+    background-color: white;
+    color: #001E50;
+}
+.carga #uploadingCat .bottonFile svg path{
+    fill: white;
+}
+.carga #uploadingCat .bottonFile:hover svg path{
+    fill: #001E50;
+}
+
+.bottonReload{
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #001E50;
+    color: white;
+    border: #001E50 1px solid;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.bottonReload:hover{
+    background-color: white;
+    color: #001E50;
+}
+.bottonReload:hover svg path{
+    fill: #001E50;
+}
+.bottonReload svg path{
+    fill: white;
+}
+.bottonReload span{
+    width: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 230px;
+    height: 260px;
+    background-color: rgb(186, 186, 186);
+}
+.card img{
+    width: 100%;
+    height:100%;
+}
+.card button{
+    border-radius: 20px;
+    border: #001E50 1px solid;
+    width: 140px;
+    height: 34px;
+    margin-bottom: 15px;
+    background-color: white;
+    color: #001E50;
+    position: absolute;
+    opacity: 0;
+}
+.card:hover button{
+    background-color: white;
+    color: #001E50;
+    opacity: 1;
+}
+.titleSeccion{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#imagenPrevisualizacion{
+    display: none;
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+}
